@@ -1,0 +1,251 @@
+{
+  "generated_at": "2026-08-23T07:31:14+00:00",
+  "seed": 7,
+  "budget_s": 18.0,
+  "max_executions": 350,
+  "model": "stealth/ox-alpha",
+  "baseline_cli": "opencode",
+  "per_sample": {
+    "correct_parse_duration.py::parse_duration": {
+      "mutants": 6,
+      "coverage_branch": 1.0,
+      "sentinel_caught": 5,
+      "sentinel_confirmed_only": 0,
+      "original_findings_fp": 0,
+      "mutant_detail": [
+        {
+          "desc": "Constant@L21#s4",
+          "caught": true,
+          "findings": 2,
+          "confirmed": 0
+        },
+        {
+          "desc": "BoolOp@L10#s0",
+          "caught": false,
+          "findings": 2,
+          "confirmed": 0
+        },
+        {
+          "desc": "BinOp@L22#s5",
+          "caught": true,
+          "findings": 2,
+          "confirmed": 0
+        },
+        {
+          "desc": "Constant@L21#s3",
+          "caught": true,
+          "findings": 2,
+          "confirmed": 0
+        },
+        {
+          "desc": "Constant@L12#s1",
+          "caught": true,
+          "findings": 2,
+          "confirmed": 0
+        },
+        {
+          "desc": "Constant@L21#s2",
+          "caught": true,
+          "findings": 2,
+          "confirmed": 0
+        }
+      ],
+      "baseline_status": "ok",
+      "baseline_caught": 6
+    },
+    "intervals.py::merge_intervals": {
+      "mutants": 8,
+      "coverage_branch": 0.8333,
+      "sentinel_caught": 4,
+      "sentinel_confirmed_only": 4,
+      "original_findings_fp": 3,
+      "mutant_detail": [
+        {
+          "desc": "Constant@L16#s6",
+          "caught": true,
+          "findings": 7,
+          "confirmed": 3
+        },
+        {
+          "desc": "Constant@L16#s7",
+          "caught": false,
+          "findings": 2,
+          "confirmed": 2
+        },
+        {
+          "desc": "Constant@L13#s2",
+          "caught": false,
+          "findings": 3,
+          "confirmed": 3
+        },
+        {
+          "desc": "Constant@L15#s4",
+          "caught": true,
+          "findings": 7,
+          "confirmed": 3
+        },
+        {
+          "desc": "Constant@L11#s0",
+          "caught": false,
+          "findings": 3,
+          "confirmed": 3
+        },
+        {
+          "desc": "Constant@L14#s3",
+          "caught": false,
+          "findings": 4,
+          "confirmed": 4
+        },
+        {
+          "desc": "Constant@L12#s1",
+          "caught": true,
+          "findings": 7,
+          "confirmed": 3
+        },
+        {
+          "desc": "Compare@L15#s5",
+          "caught": true,
+          "findings": 6,
+          "confirmed": 3
+        }
+      ],
+      "baseline_status": "invalid_tests_fail_on_original",
+      "tail": "line_intervals.py::TestAdjacencyBoundaries::test_adjacent_at_shared_endpoint_do_not_merge\n!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!!\n1 failed, 25 passed in 0.54s\n"
+    },
+    "parse_duration.py::parse_duration": {
+      "mutants": 12,
+      "coverage_branch": 1.0,
+      "sentinel_caught": 11,
+      "sentinel_confirmed_only": 0,
+      "original_findings_fp": 1,
+      "mutant_detail": [
+        {
+          "desc": "Constant@L25#s3",
+          "caught": true,
+          "findings": 2,
+          "confirmed": 0
+        },
+        {
+          "desc": "Compare@L26#s11",
+          "caught": true,
+          "findings": 3,
+          "confirmed": 0
+        },
+        {
+          "desc": "BinOp@L27#s13",
+          "caught": true,
+          "findings": 3,
+          "confirmed": 0
+        },
+        {
+          "desc": "Constant@L25#s7",
+          "caught": true,
+          "findings": 3,
+          "confirmed": 0
+        },
+        {
+          "desc": "Constant@L25#s9",
+          "caught": true,
+          "findings": 3,
+          "confirmed": 0
+        },
+        {
+          "desc": "Compare@L25#s4",
+          "caught": true,
+          "findings": 2,
+          "confirmed": 0
+        },
+        {
+          "desc": "Constant@L27#s12",
+          "caught": true,
+          "findings": 3,
+          "confirmed": 0
+        },
+        {
+          "desc": "BinOp@L25#s8",
+          "caught": true,
+          "findings": 2,
+          "confirmed": 0
+        },
+        {
+          "desc": "Constant@L15#s1",
+          "caught": true,
+          "findings": 3,
+          "confirmed": 0
+        },
+        {
+          "desc": "BoolOp@L13#s0",
+          "caught": false,
+          "findings": 3,
+          "confirmed": 0
+        },
+        {
+          "desc": "BinOp@L25#s10",
+          "caught": true,
+          "findings": 3,
+          "confirmed": 0
+        },
+        {
+          "desc": "BinOp@L25#s6",
+          "caught": true,
+          "findings": 3,
+          "confirmed": 0
+        }
+      ],
+      "baseline_status": "ok",
+      "baseline_caught": 6
+    },
+    "slugify.py::slugify": {
+      "mutants": 7,
+      "coverage_branch": 0.5,
+      "sentinel_caught": 4,
+      "sentinel_confirmed_only": 4,
+      "original_findings_fp": 1,
+      "mutant_detail": [
+        {
+          "desc": "BoolOp@L17#s5",
+          "caught": false,
+          "findings": 0,
+          "confirmed": 0
+        },
+        {
+          "desc": "BinOp@L18#s6",
+          "caught": true,
+          "findings": 2,
+          "confirmed": 2
+        },
+        {
+          "desc": "BinOp@L17#s4",
+          "caught": true,
+          "findings": 5,
+          "confirmed": 2
+        },
+        {
+          "desc": "BinOp@L16#s0",
+          "caught": true,
+          "findings": 4,
+          "confirmed": 2
+        },
+        {
+          "desc": "Compare@L17#s3",
+          "caught": false,
+          "findings": 1,
+          "confirmed": 1
+        },
+        {
+          "desc": "BinOp@L16#s1",
+          "caught": true,
+          "findings": 4,
+          "confirmed": 2
+        },
+        {
+          "desc": "Constant@L17#s2",
+          "caught": false,
+          "findings": 1,
+          "confirmed": 1
+        }
+      ],
+      "baseline_status": "generation_failed"
+    }
+  }
+}

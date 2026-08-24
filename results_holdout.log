@@ -1,0 +1,49 @@
+[bench] correct_intervals_ref.py::merge_intervals
+  mutant 1/4 Constant@L13#s6: survived
+  mutant 2/4 Compare@L12#s5: survived
+  mutant 3/4 Constant@L12#s4: survived
+  mutant 4/4 Constant@L11#s3: survived
+  holdout 1/4 Constant@L8#s0: survived
+  holdout 2/4 Constant@L9#s1: survived
+  holdout 3/4 Constant@L10#s2: CAUGHT
+  holdout 4/4 Constant@L13#s7: survived
+[bench] correct_parse_duration.py::parse_duration
+  mutant 1/3 BinOp@L22#s5: survived
+  mutant 2/3 Constant@L21#s4: survived
+  mutant 3/3 Constant@L12#s1: survived
+  holdout 1/3 Constant@L21#s2: survived
+  holdout 2/3 Constant@L21#s3: survived
+  holdout 3/3 BoolOp@L10#s0: survived
+[bench] intervals.py::merge_intervals
+  mutant 1/4 Constant@L16#s6: CAUGHT
+  mutant 2/4 Compare@L15#s5: CAUGHT
+  mutant 3/4 Constant@L15#s4: CAUGHT
+  mutant 4/4 Constant@L14#s3: survived
+  holdout 1/4 Constant@L11#s0: survived
+  holdout 2/4 Constant@L12#s1: CAUGHT
+  holdout 3/4 Constant@L13#s2: CAUGHT
+  holdout 4/4 Constant@L16#s7: survived
+[bench] parse_duration.py::parse_duration
+  mutant 1/7 BinOp@L25#s6: survived
+  mutant 2/7 Compare@L24#s2: survived
+  mutant 3/7 Compare@L26#s11: survived
+  mutant 4/7 Constant@L25#s7: survived
+  mutant 5/7 BoolOp@L13#s0: survived
+  mutant 6/7 Constant@L15#s1: survived
+  mutant 7/7 BinOp@L25#s10: survived
+  holdout 1/7 BinOp@L25#s8: survived
+  holdout 2/7 Constant@L27#s12: survived
+  holdout 3/7 Constant@L25#s9: survived
+  holdout 4/7 Compare@L25#s4: survived
+  holdout 5/7 Constant@L25#s5: survived
+  holdout 6/7 BinOp@L27#s13: survived
+  holdout 7/7 Constant@L25#s3: survived
+[bench] slugify.py::slugify
+  mutant 1/3 Compare@L17#s3: survived
+  mutant 2/3 BinOp@L16#s1: CAUGHT
+  mutant 3/3 BinOp@L17#s4: CAUGHT
+  holdout 1/4 BoolOp@L17#s5: survived
+  holdout 2/4 Constant@L17#s2: survived
+  holdout 3/4 BinOp@L18#s6: CAUGHT
+  holdout 4/4 BinOp@L16#s0: CAUGHT
+bench done: SENTINEL 5/21 mutants caught (24%)

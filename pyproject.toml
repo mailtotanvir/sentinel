@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sentinel-verifier"
+version = "0.1.0"
+description = "SENTINEL - adversarial verification agent: property-based tests, edge-case synthesis, coverage-guided bug hunting"
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "SENTINEL contributors" }]
+requires-python = ">=3.11"
+keywords = [
+    "testing", "property-based-testing", "fuzzing", "mutation-testing",
+    "bug-hunting", "verification", "hypothesis", "coverage-guided",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Software Development :: Quality Assurance",
+    "Topic :: Software Development :: Testing",
+]
+dependencies = ["coverage>=7"]
+
+[project.optional-dependencies]
+pbt = ["hypothesis>=6"]
+dev = ["pytest>=8", "hypothesis>=6", "pytest-cov>=5"]
+
+[project.scripts]
+sentinel = "sentinel.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["sentinel*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"

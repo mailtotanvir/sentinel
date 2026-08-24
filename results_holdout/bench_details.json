@@ -1,0 +1,782 @@
+{
+  "generated_at": "2026-08-24T04:44:05+00:00",
+  "seed": 7,
+  "budget_s": 18.0,
+  "max_executions": 350,
+  "model": "stealth/ox-alpha",
+  "baseline_cli": "opencode",
+  "baseline_providers_used": [],
+  "per_sample": {
+    "correct_intervals_ref.py::merge_intervals": {
+      "mutants": 5,
+      "coverage_branch": 1.0,
+      "sentinel_caught": 4,
+      "per_seed": [
+        {
+          "seed": 7,
+          "caught": 4
+        },
+        {
+          "seed": 1007,
+          "caught": 4
+        },
+        {
+          "seed": 2007,
+          "caught": 4
+        }
+      ],
+      "confirmed_any_seed": 4,
+      "original_findings_fp": 4,
+      "original_findings": [
+        {
+          "args": [
+            [
+              0
+            ]
+          ],
+          "kwargs": {},
+          "property": "exception_contract",
+          "kind": "exception_contract",
+          "severity": "SUSPECTED"
+        },
+        {
+          "args": [
+            [
+              "abc",
+              "abc"
+            ]
+          ],
+          "kwargs": {},
+          "property": "exception_contract",
+          "kind": "exception_contract",
+          "severity": "SUSPECTED"
+        },
+        {
+          "args": [
+            [
+              [
+                1,
+                4
+              ],
+              {}
+            ]
+          ],
+          "kwargs": {},
+          "property": "exception_contract",
+          "kind": "exception_contract",
+          "severity": "SUSPECTED"
+        },
+        {
+          "args": [
+            [
+              ""
+            ]
+          ],
+          "kwargs": {},
+          "property": "exception_contract",
+          "kind": "exception_contract",
+          "severity": "SUSPECTED"
+        }
+      ],
+      "mutant_detail": [
+        {
+          "desc": "Constant@L8#s0",
+          "caught": true,
+          "findings": 5,
+          "confirmed": 4
+        },
+        {
+          "desc": "Constant@L12#s4",
+          "caught": true,
+          "findings": 3,
+          "confirmed": 2
+        },
+        {
+          "desc": "Compare@L12#s5",
+          "caught": true,
+          "findings": 4,
+          "confirmed": 3
+        },
+        {
+          "desc": "Del:Assign@L8#s8",
+          "caught": true,
+          "findings": 2,
+          "confirmed": 1
+        },
+        {
+          "desc": "Constant@L11#s3",
+          "caught": false,
+          "findings": 3,
+          "confirmed": 3
+        }
+      ],
+      "holdout": {
+        "seed": 99,
+        "mutants": 6,
+        "caught": 6,
+        "detail": [
+          {
+            "desc": "Del:Return@L16#s10",
+            "caught": true,
+            "findings": 4,
+            "confirmed": 3
+          },
+          {
+            "desc": "Del:Assign@L9#s9",
+            "caught": true,
+            "findings": 4,
+            "confirmed": 3
+          },
+          {
+            "desc": "Constant@L9#s1",
+            "caught": true,
+            "findings": 4,
+            "confirmed": 3
+          },
+          {
+            "desc": "Slice@L10#s2",
+            "caught": true,
+            "findings": 4,
+            "confirmed": 4
+          },
+          {
+            "desc": "Constant@L13#s6",
+            "caught": true,
+            "findings": 4,
+            "confirmed": 3
+          },
+          {
+            "desc": "Constant@L13#s7",
+            "caught": true,
+            "findings": 4,
+            "confirmed": 3
+          }
+        ]
+      },
+      "baseline_status": "rate_limited"
+    },
+    "correct_parse_duration.py::parse_duration": {
+      "mutants": 8,
+      "coverage_branch": 1.0,
+      "sentinel_caught": 7,
+      "per_seed": [
+        {
+          "seed": 7,
+          "caught": 7
+        },
+        {
+          "seed": 1007,
+          "caught": 7
+        },
+        {
+          "seed": 2007,
+          "caught": 7
+        }
+      ],
+      "confirmed_any_seed": 3,
+      "original_findings_fp": 0,
+      "original_findings": [],
+      "mutant_detail": [
+        {
+          "desc": "Constant@L21#s10",
+          "caught": true,
+          "findings": 1,
+          "confirmed": 0
+        },
+        {
+          "desc": "Constant@L21#s5",
+          "caught": true,
+          "findings": 2,
+          "confirmed": 1
+        },
+        {
+          "desc": "Constant@L21#s8",
+          "caught": true,
+          "findings": 1,
+          "confirmed": 0
+        },
+        {
+          "desc": "BinOp@L22#s11",
+          "caught": true,
+          "findings": 1,
+          "confirmed": 0
+        },
+        {
+          "desc": "AugAssign@L16#s3",
+          "caught": true,
+          "findings": 2,
+          "confirmed": 1
+        },
+        {
+          "desc": "AugAssign@L27#s14",
+          "caught": true,
+          "findings": 1,
+          "confirmed": 0
+        },
+        {
+          "desc": "Del:Assign@L12#s15",
+          "caught": true,
+          "findings": 2,
+          "confirmed": 1
+        },
+        {
+          "desc": "Constant@L13#s2",
+          "caught": false,
+          "findings": 0,
+          "confirmed": 0
+        }
+      ],
+      "holdout": {
+        "seed": 99,
+        "mutants": 9,
+        "caught": 9,
+        "detail": [
+          {
+            "desc": "Constant@L21#s9",
+            "caught": true,
+            "findings": 1,
+            "confirmed": 0
+          },
+          {
+            "desc": "Constant@L12#s1",
+            "caught": true,
+            "findings": 1,
+            "confirmed": 0
+          },
+          {
+            "desc": "Constant@L21#s6",
+            "caught": true,
+            "findings": 2,
+            "confirmed": 1
+          },
+          {
+            "desc": "Constant@L17#s4",
+            "caught": true,
+            "findings": 1,
+            "confirmed": 0
+          },
+          {
+            "desc": "BoolOp@L10#s0",
+            "caught": true,
+            "findings": 1,
+            "confirmed": 0
+          },
+          {
+            "desc": "Del:Return@L28#s17",
+            "caught": true,
+            "findings": 1,
+            "confirmed": 0
+          },
+          {
+            "desc": "Del:Assign@L13#s16",
+            "caught": true,
+            "findings": 2,
+            "confirmed": 1
+          },
+          {
+            "desc": "AugAssign@L22#s12",
+            "caught": true,
+            "findings": 2,
+            "confirmed": 0
+          },
+          {
+            "desc": "Constant@L21#s7",
+            "caught": true,
+            "findings": 2,
+            "confirmed": 1
+          }
+        ]
+      },
+      "baseline_status": "rate_limited"
+    },
+    "intervals.py::merge_intervals": {
+      "mutants": 5,
+      "coverage_branch": 1.0,
+      "sentinel_caught": 4,
+      "per_seed": [
+        {
+          "seed": 7,
+          "caught": 4
+        },
+        {
+          "seed": 1007,
+          "caught": 4
+        },
+        {
+          "seed": 2007,
+          "caught": 4
+        }
+      ],
+      "confirmed_any_seed": 4,
+      "original_findings_fp": 4,
+      "original_findings": [
+        {
+          "args": [
+            [
+              0
+            ]
+          ],
+          "kwargs": {},
+          "property": "exception_contract",
+          "kind": "exception_contract",
+          "severity": "SUSPECTED"
+        },
+        {
+          "args": [
+            [
+              "abc",
+              "abc"
+            ]
+          ],
+          "kwargs": {},
+          "property": "exception_contract",
+          "kind": "exception_contract",
+          "severity": "SUSPECTED"
+        },
+        {
+          "args": [
+            [
+              [
+                0,
+                2
+              ],
+              [
+                2,
+                5
+              ],
+              {}
+            ]
+          ],
+          "kwargs": {},
+          "property": "exception_contract",
+          "kind": "exception_contract",
+          "severity": "SUSPECTED"
+        },
+        {
+          "args": [
+            [
+              ""
+            ]
+          ],
+          "kwargs": {},
+          "property": "exception_contract",
+          "kind": "exception_contract",
+          "severity": "SUSPECTED"
+        }
+      ],
+      "mutant_detail": [
+        {
+          "desc": "Constant@L11#s0",
+          "caught": true,
+          "findings": 6,
+          "confirmed": 4
+        },
+        {
+          "desc": "Constant@L15#s4",
+          "caught": true,
+          "findings": 3,
+          "confirmed": 2
+        },
+        {
+          "desc": "Compare@L15#s5",
+          "caught": true,
+          "findings": 4,
+          "confirmed": 3
+        },
+        {
+          "desc": "Del:Assign@L11#s8",
+          "caught": true,
+          "findings": 2,
+          "confirmed": 1
+        },
+        {
+          "desc": "Constant@L14#s3",
+          "caught": false,
+          "findings": 3,
+          "confirmed": 3
+        }
+      ],
+      "holdout": {
+        "seed": 99,
+        "mutants": 6,
+        "caught": 5,
+        "detail": [
+          {
+            "desc": "Del:Return@L19#s10",
+            "caught": true,
+            "findings": 4,
+            "confirmed": 3
+          },
+          {
+            "desc": "Del:Assign@L12#s9",
+            "caught": true,
+            "findings": 4,
+            "confirmed": 3
+          },
+          {
+            "desc": "Constant@L12#s1",
+            "caught": true,
+            "findings": 4,
+            "confirmed": 3
+          },
+          {
+            "desc": "Slice@L13#s2",
+            "caught": false,
+            "findings": 4,
+            "confirmed": 4
+          },
+          {
+            "desc": "Constant@L16#s6",
+            "caught": true,
+            "findings": 5,
+            "confirmed": 3
+          },
+          {
+            "desc": "Constant@L16#s7",
+            "caught": true,
+            "findings": 4,
+            "confirmed": 3
+          }
+        ]
+      },
+      "baseline_status": "rate_limited"
+    },
+    "parse_duration.py::parse_duration": {
+      "mutants": 13,
+      "coverage_branch": 1.0,
+      "sentinel_caught": 12,
+      "per_seed": [
+        {
+          "seed": 7,
+          "caught": 12
+        },
+        {
+          "seed": 1007,
+          "caught": 12
+        },
+        {
+          "seed": 2007,
+          "caught": 12
+        }
+      ],
+      "confirmed_any_seed": 2,
+      "original_findings_fp": 1,
+      "original_findings": [
+        {
+          "args": [
+            "2h"
+          ],
+          "kwargs": {},
+          "property": "bound_0_result_is_non-negative",
+          "kind": "range_bound",
+          "severity": "SUSPECTED"
+        }
+      ],
+      "mutant_detail": [
+        {
+          "desc": "AugAssign@L19#s3",
+          "caught": true,
+          "findings": 2,
+          "confirmed": 1
+        },
+        {
+          "desc": "Constant@L25#s9",
+          "caught": true,
+          "findings": 2,
+          "confirmed": 0
+        },
+        {
+          "desc": "Constant@L25#s13",
+          "caught": true,
+          "findings": 2,
+          "confirmed": 0
+        },
+        {
+          "desc": "Constant@L16#s2",
+          "caught": false,
+          "findings": 1,
+          "confirmed": 0
+        },
+        {
+          "desc": "Del:Return@L35#s26",
+          "caught": true,
+          "findings": 1,
+          "confirmed": 0
+        },
+        {
+          "desc": "Compare@L25#s8",
+          "caught": true,
+          "findings": 1,
+          "confirmed": 0
+        },
+        {
+          "desc": "Constant@L25#s11",
+          "caught": true,
+          "findings": 2,
+          "confirmed": 0
+        },
+        {
+          "desc": "Compare@L26#s17",
+          "caught": true,
+          "findings": 2,
+          "confirmed": 0
+        },
+        {
+          "desc": "Constant@L15#s1",
+          "caught": true,
+          "findings": 2,
+          "confirmed": 0
+        },
+        {
+          "desc": "Constant@L27#s18",
+          "caught": true,
+          "findings": 2,
+          "confirmed": 0
+        },
+        {
+          "desc": "BinOp@L25#s14",
+          "caught": true,
+          "findings": 2,
+          "confirmed": 0
+        },
+        {
+          "desc": "Compare@L24#s6",
+          "caught": true,
+          "findings": 2,
+          "confirmed": 0
+        },
+        {
+          "desc": "Del:Assign@L16#s25",
+          "caught": true,
+          "findings": 2,
+          "confirmed": 1
+        }
+      ],
+      "holdout": {
+        "seed": 99,
+        "mutants": 13,
+        "caught": 12,
+        "detail": [
+          {
+            "desc": "AugAssign@L34#s23",
+            "caught": false,
+            "findings": 1,
+            "confirmed": 0
+          },
+          {
+            "desc": "AugAssign@L27#s20",
+            "caught": true,
+            "findings": 2,
+            "confirmed": 0
+          },
+          {
+            "desc": "Del:Assign@L15#s24",
+            "caught": true,
+            "findings": 2,
+            "confirmed": 1
+          },
+          {
+            "desc": "BinOp@L27#s19",
+            "caught": true,
+            "findings": 2,
+            "confirmed": 0
+          },
+          {
+            "desc": "BinOp@L25#s10",
+            "caught": true,
+            "findings": 2,
+            "confirmed": 0
+          },
+          {
+            "desc": "Constant@L24#s5",
+            "caught": true,
+            "findings": 1,
+            "confirmed": 0
+          },
+          {
+            "desc": "Constant@L26#s16",
+            "caught": true,
+            "findings": 2,
+            "confirmed": 0
+          },
+          {
+            "desc": "AugAssign@L29#s21",
+            "caught": true,
+            "findings": 2,
+            "confirmed": 0
+          },
+          {
+            "desc": "BoolOp@L13#s0",
+            "caught": true,
+            "findings": 2,
+            "confirmed": 0
+          },
+          {
+            "desc": "AugAssign@L25#s15",
+            "caught": true,
+            "findings": 2,
+            "confirmed": 0
+          },
+          {
+            "desc": "Constant@L25#s7",
+            "caught": true,
+            "findings": 1,
+            "confirmed": 0
+          },
+          {
+            "desc": "BinOp@L25#s12",
+            "caught": true,
+            "findings": 1,
+            "confirmed": 0
+          },
+          {
+            "desc": "Constant@L20#s4",
+            "caught": true,
+            "findings": 2,
+            "confirmed": 0
+          }
+        ]
+      },
+      "baseline_status": "rate_limited"
+    },
+    "slugify.py::slugify": {
+      "mutants": 8,
+      "coverage_branch": 1.0,
+      "sentinel_caught": 5,
+      "per_seed": [
+        {
+          "seed": 7,
+          "caught": 5
+        },
+        {
+          "seed": 1007,
+          "caught": 5
+        },
+        {
+          "seed": 2007,
+          "caught": 5
+        }
+      ],
+      "confirmed_any_seed": 5,
+      "original_findings_fp": 1,
+      "original_findings": [
+        {
+          "args": [
+            "a",
+            "combining-e\u0301"
+          ],
+          "kwargs": {},
+          "property": "exception_contract",
+          "kind": "exception_contract",
+          "severity": "CONFIRMED"
+        }
+      ],
+      "mutant_detail": [
+        {
+          "desc": "BinOp@L17#s9",
+          "caught": true,
+          "findings": 3,
+          "confirmed": 2
+        },
+        {
+          "desc": "BinOp@L18#s11",
+          "caught": true,
+          "findings": 2,
+          "confirmed": 2
+        },
+        {
+          "desc": "Del:Return@L19#s15",
+          "caught": true,
+          "findings": 2,
+          "confirmed": 1
+        },
+        {
+          "desc": "BoolOp@L17#s10",
+          "caught": false,
+          "findings": 0,
+          "confirmed": 0
+        },
+        {
+          "desc": "Del:Assign@L14#s12",
+          "caught": true,
+          "findings": 2,
+          "confirmed": 1
+        },
+        {
+          "desc": "Constant@L16#s2",
+          "caught": true,
+          "findings": 2,
+          "confirmed": 1
+        },
+        {
+          "desc": "Del:Assign@L15#s13",
+          "caught": false,
+          "findings": 1,
+          "confirmed": 1
+        },
+        {
+          "desc": "Del:Assign@L16#s14",
+          "caught": false,
+          "findings": 1,
+          "confirmed": 1
+        }
+      ],
+      "holdout": {
+        "seed": 99,
+        "mutants": 8,
+        "caught": 3,
+        "detail": [
+          {
+            "desc": "Constant@L16#s4",
+            "caught": true,
+            "findings": 2,
+            "confirmed": 1
+          },
+          {
+            "desc": "Compare@L17#s8",
+            "caught": false,
+            "findings": 1,
+            "confirmed": 1
+          },
+          {
+            "desc": "Constant@L16#s6",
+            "caught": false,
+            "findings": 1,
+            "confirmed": 1
+          },
+          {
+            "desc": "BinOp@L16#s5",
+            "caught": true,
+            "findings": 3,
+            "confirmed": 2
+          },
+          {
+            "desc": "Constant@L17#s7",
+            "caught": false,
+            "findings": 1,
+            "confirmed": 1
+          },
+          {
+            "desc": "Constant@L15#s1",
+            "caught": false,
+            "findings": 1,
+            "confirmed": 1
+          },
+          {
+            "desc": "BinOp@L16#s3",
+            "caught": true,
+            "findings": 3,
+            "confirmed": 2
+          },
+          {
+            "desc": "Constant@L5#s0",
+            "caught": false,
+            "findings": 1,
+            "confirmed": 1
+          }
+        ]
+      },
+      "baseline_status": "rate_limited"
+    }
+  }
+}
