@@ -30,5 +30,9 @@ jobs:
           GEMINI_API_KEY: ""
       - name: Smoke scan (sandboxed end-to-end on a seeded-bug sample)
         run: |
+          scan_status=0
           python -m sentinel.cli scan samples/slugify.py::slugify \
-            --out /tmp/smoke --budget 10 --max-executions 150 --seed 7
+            --out /tmp/smoke --budget 10 --max-executions 150 --seed 7 || scan_status=$?
+          # Exit 1 means the deliberately seeded defect was found; 2 is an error.
+          test "$scan_status" -eq 1
+          test -s /tmp/smoke/report.json
